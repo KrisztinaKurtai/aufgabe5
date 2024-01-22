@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>  
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <title>Home</title>
+</head>
+<body>
+    <p>Welcome to contact.</p>
+{% block content %}
+    <h1>Contact</h1>
+    <p>E-Mail: kkurtai@student.tgm.ac.at</p>
+    <p><a href="/blog/">Zu den Benutzers</a></p>
+{% endblock %}
+
+</body>
+</html>

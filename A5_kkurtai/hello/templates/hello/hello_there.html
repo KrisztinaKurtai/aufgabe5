@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>  
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    <title>Hello, Professor!</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'hello/site.css' %}" />
+</head>
+<body>
+    <strong><span class="message">Hello, {{ name }}!</span></strong> It's {{ date | date:'F j, Y' }} at {{ date | time:'g:i a' }}.
+</body>
+</html>
